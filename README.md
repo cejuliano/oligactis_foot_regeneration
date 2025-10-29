@@ -5,6 +5,9 @@ Transcriptomic timecourse analysis of foot regeneration in Hydra oligactis
 
 This repository contains the scripts and files required to analyze a time course of regeneration in *Hydra oligactis* from RNA-seq data as presented in our manuscript. The repository is divided into two sections based on the type of computer environment in which the scripts in each section can be executed. The `cluster` folder contains scripts meant to be executed on a computing cluster running Ubuntu that uses the slurm workload manager. The `local` contains scripts meant to be executed on macOS Sonoma (14.4.1) running R (4.3.3) on RStudio (2024.04.1). `Cluster` scripts perform raw read trimming, mapping and expression estimation. `Local` scripts calculate differential gene expression analysis, coexpression networks and differential gene expression patterns.
 
+### DOI for published release
+https://doi.org/10.5281/zenodo.17476370
+
 ### Accessing required files not available on the Github repository
 
 Due to file size limitations on Github, this repository does not contain RNA-seq raw reads which can be found at the NCBI (https://www.ncbi.nlm.nih.gov) accession: PRJNA1231128.
