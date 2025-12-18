@@ -1,8 +1,7 @@
 # oligactis_foot_regeneration
 Transcriptomic timecourse analysis of foot regeneration in Hydra oligactis
 
-# RNA-seq data analysis for: Campos *et al.* 2025, Wnt signaling restores evolutionary loss of regenerative potential in Hydra
-
+# RNA-seq data analysis for: Campos *et al.* 2025, Wnt signaling restores evolutionary loss of robust foot regeneration rates in Hydra
 This repository contains the scripts and files required to analyze a time course of regeneration in *Hydra oligactis* from RNA-seq data as presented in our manuscript. The repository is divided into two sections based on the type of computer environment in which the scripts in each section can be executed. The `cluster` folder contains scripts meant to be executed on a computing cluster running Ubuntu that uses the slurm workload manager. The `local` contains scripts meant to be executed on macOS Sonoma (14.4.1) running R (4.3.3) on RStudio (2024.04.1). `Cluster` scripts perform raw read trimming, mapping and expression estimation. `Local` scripts calculate differential gene expression analysis, coexpression networks and differential gene expression patterns.
 
 ### DOI for published release
@@ -77,7 +76,7 @@ For a system without slurm, you can run the pipeline on each individual sample u
 ./resources/RNA_processing.sh [insert prefix here]
 ```
 
-After the pipeline has finished running for all samples, read count matrices need to be calculated for the data generated in this study and for the data from Wenger et al. you can execute the code within your terminal session by running:
+After the pipeline has finished running for all samples, read count matrices need to be calculated for the data generated in this study, you can execute the code within your terminal session by running:
 
 ```         
 cd resources
